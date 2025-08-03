@@ -1,0 +1,26 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 10  # Hz
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    kiwi_controller:
+      type: omni_wheel_drive_controller/OmniWheelDriveController
+
+kiwi_controller:
+  ros__parameters:
+    wheel_offset: 0.523  # 30 degrees
+    wheel_names:
+      - ST3215_Servo_Motor-v1-2_Revolute-60
+      - ST3215_Servo_Motor-v1-1_Revolute-62
+      - ST3215_Servo_Motor-v1_Revolute-64
+    robot_radius: 0.14
+    wheel_radius: 0.05
+    odom_frame_id: odom
+    base_frame_id: base_link
+    pose_covariance_diagonal: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    twist_covariance_diagonal: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    open_loop: false
+    position_feedback: true
+    enable_odom_tf: false
+    cmd_vel_timeout: 0.5
+    publish_limited_velocity: true
