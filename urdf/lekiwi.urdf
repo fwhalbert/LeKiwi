@@ -857,6 +857,7 @@
         </collision>
     </link>
     <joint name="base_mount" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -1.5707963267948966" />
         <parent link="base_link" />
         <child link="base_plate_layer1-v5" />
     </joint>
@@ -875,7 +876,7 @@
         <parent link="omni_wheel_mount-v5-2" />
         <child link="4-Omni-Directional-Wheel_Single_Body-v1-2" />
     </joint>
-    <joint name="ST3215_Servo_Motor-v1-2_Revolute-60" type="continuous">
+    <joint name="joint8" type="continuous">
         <origin xyz="0.010249999999999999 -0.035199999999999995 -0.03275" rpy="-1.5707963267948966 1.5707963267948966 0" />
         <parent link="ST3215_Servo_Motor-v1-2" />
         <child link="omni_wheel_mount-v5-2" />
@@ -891,7 +892,7 @@
         <parent link="drive_motor_mount-v11-1" />
         <child link="ST3215_Servo_Motor-v1-1" />
     </joint>
-    <joint name="ST3215_Servo_Motor-v1-1_Revolute-62" type="continuous">
+    <joint name="joint9" type="continuous">
         <origin xyz="0.010249999999999999 0.04636234 -0.014801910000000005" rpy="-1.5707963267948966 1.5707963267948966 0" />
         <parent link="ST3215_Servo_Motor-v1-1" />
         <child link="omni_wheel_mount-v5-1" />
@@ -912,7 +913,7 @@
         <parent link="drive_motor_mount-v11" />
         <child link="ST3215_Servo_Motor-v1" />
     </joint>
-    <joint name="ST3215_Servo_Motor-v1_Revolute-64" type="continuous">
+    <joint name="joint7" type="continuous">
         <origin xyz="0.010249999999999999 -0.010762340000000004 0.046859090000000006" rpy="-1.5707963267948966 1.5707963267948966 0" />
         <parent link="ST3215_Servo_Motor-v1" />
         <child link="omni_wheel_mount-v5" />

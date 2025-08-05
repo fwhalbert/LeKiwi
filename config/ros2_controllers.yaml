@@ -10,9 +10,9 @@ kiwi_controller:
   ros__parameters:
     wheel_offset: 0.523  # 30 degrees
     wheel_names:
-      - ST3215_Servo_Motor-v1-2_Revolute-60
-      - ST3215_Servo_Motor-v1-1_Revolute-62
-      - ST3215_Servo_Motor-v1_Revolute-64
+      - joint7
+      - joint8
+      - joint9
     robot_radius: 0.14
     wheel_radius: 0.05
     odom_frame_id: odom

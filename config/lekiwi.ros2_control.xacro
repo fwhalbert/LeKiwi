@@ -15,29 +15,35 @@
                     <param name="serial_baudrate">1000000</param>
                 </xacro:unless>
             </hardware>
-            <joint name="ST3215_Servo_Motor-v1-2_Revolute-60">
+            <joint name="joint7">
                 <command_interface name="velocity"/>
                 <state_interface name="position">
                   <param name="initial_value">0</param>
                 </state_interface>
                 <state_interface name="velocity"/>
                 <param name="motor_id">7</param>
+                <param name="direction">-1</param>
+                <param name="control_mode">velocity</param>
             </joint>
-            <joint name="ST3215_Servo_Motor-v1-1_Revolute-62">
+            <joint name="joint8">
                 <command_interface name="velocity"/>
                 <state_interface name="position">
                   <param name="initial_value">0</param>
                 </state_interface>
                 <state_interface name="velocity"/>
                 <param name="motor_id">8</param>
+                <param name="direction">-1</param>
+                <param name="control_mode">velocity</param>
             </joint>
-            <joint name="ST3215_Servo_Motor-v1_Revolute-64">
+            <joint name="joint9">
                 <command_interface name="velocity"/>
                 <state_interface name="position">
                   <param name="initial_value">0</param>
                 </state_interface>
                 <state_interface name="velocity"/>
                 <param name="motor_id">9</param>
+                <param name="direction">-1</param>
+                <param name="control_mode">velocity</param>
             </joint>
 
         </ros2_control>
